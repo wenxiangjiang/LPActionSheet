@@ -1,6 +1,6 @@
 # LPActionSheet
 
-`LPActionSheet` is clean and lightweight action sheet for your iOS app
+`LPActionSheet` is a clean and lightweight action sheet for your iOS app
 
 ### Installation
 
