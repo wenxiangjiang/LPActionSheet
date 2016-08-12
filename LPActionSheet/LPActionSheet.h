@@ -30,7 +30,11 @@ typedef void(^LPActionSheetBlock)(LPActionSheet *actionSheet, NSInteger index);
  *
  * @return LPActionSheet对象
  */
-- (instancetype)initWithTitle:(NSString *)title cancelButtonTitle:(NSString *)cancelButtonTitle destructiveButtonTitle:(NSString *)destructiveButtonTitle otherButtonTitles:(NSArray *)otherButtonTitles handler:(LPActionSheetBlock)actionSheetBlock NS_DESIGNATED_INITIALIZER; 
+- (instancetype)initWithTitle:(NSString *)title
+            cancelButtonTitle:(NSString *)cancelButtonTitle
+       destructiveButtonTitle:(NSString *)destructiveButtonTitle
+            otherButtonTitles:(NSArray *)otherButtonTitles
+                      handler:(LPActionSheetBlock)actionSheetBlock NS_DESIGNATED_INITIALIZER;
 
 /**
  * 创建LPActionSheet对象(便利构造器)
@@ -43,7 +47,11 @@ typedef void(^LPActionSheetBlock)(LPActionSheet *actionSheet, NSInteger index);
  *
  * @return LPActionSheet对象
  */
-+ (instancetype)actionSheetWithTitle:(NSString *)title cancelButtonTitle:(NSString *)cancelButtonTitle destructiveButtonTitle:(NSString *)destructiveButtonTitle otherButtonTitles:(NSArray *)otherButtonTitles handler:(LPActionSheetBlock)actionSheetBlock;
++ (instancetype)actionSheetWithTitle:(NSString *)title
+                   cancelButtonTitle:(NSString *)cancelButtonTitle
+              destructiveButtonTitle:(NSString *)destructiveButtonTitle
+                   otherButtonTitles:(NSArray *)otherButtonTitles
+                             handler:(LPActionSheetBlock)actionSheetBlock;
 
 /**
  * 弹出LPActionSheet视图
@@ -56,7 +64,11 @@ typedef void(^LPActionSheetBlock)(LPActionSheet *actionSheet, NSInteger index);
  *
  * @return LPActionSheet对象
  */
-+ (void)showActionSheetWithTitle:(NSString *)title cancelButtonTitle:(NSString *)cancelButtonTitle destructiveButtonTitle:(NSString *)destructiveButtonTitle otherButtonTitles:(NSArray *)otherButtonTitles handler:(LPActionSheetBlock)actionSheetBlock;
++ (void)showActionSheetWithTitle:(NSString *)title
+               cancelButtonTitle:(NSString *)cancelButtonTitle
+          destructiveButtonTitle:(NSString *)destructiveButtonTitle
+               otherButtonTitles:(NSArray *)otherButtonTitles
+                         handler:(LPActionSheetBlock)actionSheetBlock;
 
 /**
  * 弹出视图
