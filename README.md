@@ -6,7 +6,19 @@
 
 ##### From CocoaPods
 
-Coming soon
+CocoaPods is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like `LPActionSheet` in your projects. 
+
+- First, add the following line to your Podfile:
+
+```objc
+pod 'LPActionSheet', '~> 1.0'
+```
+
+- Second, install `LPActionSheet` into your project:
+
+```objc
+pod install
+```
 
 ##### Manually
 
